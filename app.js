@@ -9,12 +9,20 @@ const app = express();
 app.use(bodyParser.json());
 
 
-/* Conexión local */
+/* Conexión local 
 var cnx = mysql.createConnection({
     host:'localhost',
     database:'rocket_code_test',
     user:'root',
     password:''
+}); */
+
+/*Conexion a nube*/
+var cnx = mysql.createConnection({
+    host:'data-avimo.cgriqmyweq5c.us-east-2.rds.amazonaws.com',
+    database:'testing_ali_fullstack',
+    user:'testing',
+    password:'Pruebas%ALI%2020'
 }); 
 
 
